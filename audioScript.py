@@ -22,7 +22,7 @@ p = pyaudio.PyAudio()
 
 def record_audio(filename, duration):
     """Record stereo audio and save to a file while the sound plays."""
-    stream = p.open(format=pyaudio.paInt16, channels=channels, rate=sample_rate, input=True, input_device_index=3,frames_per_buffer=1024)
+    stream = p.open(format=pyaudio.paInt16, channels=channels, rate=sample_rate, input=True, input_device_index=4,frames_per_buffer=1024)
 
     frames = []
     print(f"Recording for {duration} seconds...")
